@@ -1,0 +1,823 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>编辑模式：计时器的添加、删除、设置和重排序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="DuguTechStudio">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    <meta name="referrer" content="no-referrer">
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="panel.html" />
+    
+    
+
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../catalog.html">
+            
+                <a href="../catalog.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    VIP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../vip/">
+            
+                <a href="../vip/">
+            
+                    
+                    订阅说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../vip/features.html">
+            
+                <a href="../vip/features.html">
+            
+                    
+                    VIP功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计时器设置教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../timer-settings/countdown.html">
+            
+                <a href="../timer-settings/countdown.html">
+            
+                    
+                    倒计时器(快速计时器)/通用设置详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../timer-settings/alarm.html">
+            
+                <a href="../timer-settings/alarm.html">
+            
+                    
+                    警报设置详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../timer-settings/assit-alarm.html">
+            
+                <a href="../timer-settings/assit-alarm.html">
+            
+                    
+                    辅助播报详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../timer-settings/interval.html">
+            
+                <a href="../timer-settings/interval.html">
+            
+                    
+                    间隔计时器（逐步计时器）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../timer-settings/tomato.html">
+            
+                <a href="../timer-settings/tomato.html">
+            
+                    
+                    番茄钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../timer-settings/forwardtimer.html">
+            
+                <a href="../timer-settings/forwardtimer.html">
+            
+                    
+                    正计时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../timer-settings/counter.html">
+            
+                <a href="../timer-settings/counter.html">
+            
+                    
+                    计数器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    APP设置（侧边栏中APP设置界面）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../app-setting/detail2.html">
+            
+                <a href="../app-setting/detail2.html">
+            
+                    
+                    （侧边栏中的）设置详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../app-setting/basic.html">
+            
+                <a href="../app-setting/basic.html">
+            
+                    
+                    App设置-通用设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../app-setting/audio.html">
+            
+                <a href="../app-setting/audio.html">
+            
+                    
+                    App设置-音频设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../app-setting/new-timer-config.html">
+            
+                <a href="../app-setting/new-timer-config.html">
+            
+                    
+                    App设置-新计时器默认配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../app-setting/signal.html">
+            
+                <a href="../app-setting/signal.html">
+            
+                    
+                    App设置-其它提醒方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../app-setting/notification.html">
+            
+                <a href="../app-setting/notification.html">
+            
+                    
+                    App设置-通知设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    操作教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="edit.html">
+            
+                <a href="edit.html">
+            
+                    
+                    编辑模式：计时器的添加、删除、设置和重排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="panel.html">
+            
+                <a href="panel.html">
+            
+                    
+                    面板列表的编辑添加、删除、重命名和排序功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="import-export.html">
+            
+                <a href="import-export.html">
+            
+                    
+                    导入/导出面板数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="widget.html">
+            
+                <a href="widget.html">
+            
+                    
+                    小组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="floating-window.html">
+            
+                <a href="floating-window.html">
+            
+                    
+                    悬浮窗
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    后台运行设置教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../background-setup/all-platform.html">
+            
+                <a href="../background-setup/all-platform.html">
+            
+                    
+                    其他手机白名单设置指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../background-setup/huawei.html">
+            
+                <a href="../background-setup/huawei.html">
+            
+                    
+                    华为手机后台设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../background-setup/xiaomi.html">
+            
+                <a href="../background-setup/xiaomi.html">
+            
+                    
+                    小米手机后台设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../background-setup/oppo.html">
+            
+                <a href="../background-setup/oppo.html">
+            
+                    
+                    OPPO手机后台设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../background-setup/vivo.html">
+            
+                <a href="../background-setup/vivo.html">
+            
+                    
+                    vivo手机后台设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../update-log.html">
+            
+                <a href="../update-log.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    常见的问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../faqs/2.html">
+            
+                <a href="../faqs/2.html">
+            
+                    
+                    统计数据不准的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../faqs/1.html">
+            
+                <a href="../faqs/1.html">
+            
+                    
+                    铃声不响，但是可以正常产生震动效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../faqs/3.html">
+            
+                <a href="../faqs/3.html">
+            
+                    
+                    铃声不响，也没有震动效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../other/privacy.html">
+            
+                <a href="../other/privacy.html">
+            
+                    
+                    隐私政策
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../other/user-service.html">
+            
+                <a href="../other/user-service.html">
+            
+                    
+                    用户协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >编辑模式：计时器的添加、删除、设置和重排序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BA1;&#x65F6;&#x5668;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF1A;&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x8BBE;&#x7F6E;&#x548C;&#x91CD;&#x6392;&#x5E8F;">&#x8BA1;&#x65F6;&#x5668;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF1A;&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x8BBE;&#x7F6E;&#x548C;&#x91CD;&#x6392;&#x5E8F;</h1>
+<h3 id="1-&#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x9000;&#x51FA;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;">1. &#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;/&#x9000;&#x51FA;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;</h3>
+<p>&#x5728;&#x201C;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x201D;&#x4E0B;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x201C;&#x6DFB;&#x52A0;&#x201D;&#xFF0C;&#x201C;&#x91CD;&#x6392;&#x5E8F;&#x201D;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF1A;</strong> &#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x201C;&#x66F4;&#x591A;&#x201D;&#x56FE;&#x6807;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x201D;</p>
+<p><strong>&#x9000;&#x51FA;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF1A;</strong> &#x5728;&#x201C;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x201D;&#x4E0B;&#xFF0C; &#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x201C;&#x5B8C;&#x6210;&#x201D;&#x6309;&#x94AE;</p>
+<p><img src="https://gd-hbimg.huaban.com/4835f8a9efd4ae48c4073bdab7065834681362d98f874-go8S76" alt="280caec96fd0d79d4a759a51a79ebf74.gif"></p>
+<h3 id="2-&#x6DFB;&#x52A0;&#x5220;&#x9664;&#x590D;&#x5236;&#x6392;&#x5E8F;&#x7F16;&#x8F91;&#x8BA1;&#x65F6;&#x5668;">2. &#x6DFB;&#x52A0;/&#x5220;&#x9664;/&#x590D;&#x5236;/&#x6392;&#x5E8F;/&#x7F16;&#x8F91;&#x8BA1;&#x65F6;&#x5668;</h3>
+<h4 id="21-&#x6DFB;&#x52A0;&#x8BA1;&#x65F6;&#x5668;">2.1 &#x6DFB;&#x52A0;&#x8BA1;&#x65F6;&#x5668;</h4>
+<p><img src="https://gd-hbimg.huaban.com/13420b20af7d4e018f38396cb5ecfeb594617dab199f1d-g3Sl1f" alt="a166af12c6c1bfd521767b5f6ebd6ee2.gif"></p>
+<h4 id="22-&#x5220;&#x9664;&#x8BA1;&#x65F6;&#x5668;">2.2 &#x5220;&#x9664;&#x8BA1;&#x65F6;&#x5668;</h4>
+<p><img src="https://gd-hbimg.huaban.com/a373136d745a5c45246cd0def0c6dd9bac4cc542179f03-ikkjaN" alt="240d3fb3a8053b254b76cb58c4a947fe.gif"></p>
+<h4 id="23-&#x590D;&#x5236;&#x8BA1;&#x65F6;&#x5668;">2.3 &#x590D;&#x5236;&#x8BA1;&#x65F6;&#x5668;</h4>
+<p><img src="https://gd-hbimg.huaban.com/140a3d93411ada2d2b240884055ac1b57fca04bd1b371f-sJFIFe" alt="a05e3813ba5b0b1a5c755a7da24ffb33.gif"></p>
+<h4 id="24-&#x91CD;&#x6392;&#x5E8F;">2.4 &#x91CD;&#x6392;&#x5E8F;</h4>
+<p><img src="https://gd-hbimg.huaban.com/b6a71418f00ceee5d53fcb7eb77c0e34e81780d7cfeb6-UfK4ud" alt="ea02df3f2c2ba848e33b48604bb7c762.gif"></p>
+<h4 id="25-&#x8BA1;&#x65F6;&#x5668;&#x7F16;&#x8F91;">2.5 &#x8BA1;&#x65F6;&#x5668;&#x7F16;&#x8F91;</h4>
+<p>&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5355;&#x51FB;&#x8BA1;&#x65F6;&#x5668;&#xFF0C;&#x9009;&#x62E9;&#x201C;<strong>&#x7F16;&#x8F91;</strong>&#x201D;&#x5373;&#x53EF;&#x8DF3;&#x8F6C;&#x5230;&#x201C;<strong>&#x8BA1;&#x65F6;&#x5668;&#x8BBE;&#x7F6E;&#x754C;&#x9762;</strong>&#x201D;&#x3002;</p>
+<p>&#x8BA1;&#x65F6;&#x5668;&#x8BBE;&#x7F6E;&#x754C;&#x9762;&#x4E2D;&#xFF0C;&#x70B9;&#x51FB;<strong>&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x201C;&#x5E2E;&#x52A9;&#x201D;</strong>&#x6309;&#x94AE;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x8BE5;&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x6240;&#x6709;&#x8BBE;&#x7F6E;&#x9879;&#x7684;&#x529F;&#x80FD;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p><img src="https://gd-hbimg.huaban.com/2299eacbd5aac680438543b86c6e4742c6c2134920e7ef-5OC2sa" alt="52c62bf325cc840f59adfed9e303f099.gif"></p>
+<h3 id="3-&#x9762;&#x677F;&#x7684;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;">3. &#x9762;&#x677F;&#x7684;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;</h3>
+<p>&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#x3001;&#x81EA;&#x7531;&#x5E03;&#x5C40;&#x3002;</p>
+<p><img src="https://gd-hbimg.huaban.com/0e2c023ad05837d9c185d0cee780d86bc25a5eaf4bb4c-Kff32v" alt="d41ebaeece6d03d4d848866e3cf338e6.png" style="zoom:50%;"></p>
+<h4 id="31-&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;">3.1 &#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;</h4>
+<p>&#x6839;&#x636E;&#x5F53;&#x524D;<strong>&#x5C4F;&#x5E55;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;</strong>&#xFF0C;&#x4EE5;&#x53CA;&#x5F53;&#x524D;<strong>&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x603B;&#x4E2A;&#x6570;</strong>&#xFF0C;<strong>&#x81EA;&#x52A8;&#x8BA1;&#x7B97;</strong>&#x51FA;&#x8BA1;&#x65F6;&#x5668;&#x7684;<strong>&#x5927;&#x5C0F;</strong>&#x548C;<strong>&#x4F4D;&#x7F6E;</strong>&#x3002;</p>
+<p>&#x62D6;&#x62FD;&#x8BA1;&#x65F6;&#x5668;&#x4EE5;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
+<p><img src="https://gd-hbimg.huaban.com/35f5a475428c07997f9a2d1c1b48d4c8001633643ae88a-866XDA" alt="eb49315ce978a32313e2bcb60ca76874.gif"></p>
+<h4 id="32-&#x81EA;&#x7531;&#x5E03;&#x5C40;">3.2 &#x81EA;&#x7531;&#x5E03;&#x5C40;</h4>
+<p>&#x9700;&#x8981;&#x7528;&#x6237;<strong>&#x624B;&#x52A8;</strong>&#x5BF9;&#x6BCF;&#x4E2A;&#x8BA1;&#x65F6;&#x5668;&#x8FDB;&#x884C;<strong>&#x62D6;&#x62FD;</strong>&#x548C;<strong>&#x7F29;&#x653E;</strong>&#xFF0C;&#x4EE5;&#x786E;&#x5B9A;&#x8BA1;&#x65F6;&#x5668;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5927;&#x5C0F;&#x3002;</p>
+<p><img src="https://gd-hbimg.huaban.com/698ce169776eaca68fe718ec20f0754bf25117401ea800-IyVOvL" alt="b1bbda44959777dc0d9d88251a858035.gif"></p>
+<p style="border-top: solid 1px #eee; color:#ccc; padding-top:10px; margin-top:90px;">&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;12/9/2023, 11:40:09 AM<span style="float:right"></span></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="panel.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 面板列表的编辑添加、删除、重命名和排序功能">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"编辑模式：计时器的添加、删除、设置和重排序","level":"1.6.1","depth":2,"next":{"title":"面板列表的编辑添加、删除、重命名和排序功能","level":"1.6.2","depth":2,"path":"operation-instruction/panel.md","ref":"./operation-instruction/panel.md","articles":[]},"previous":{"title":"操作教程","level":"1.6","depth":1,"ref":"","articles":[{"title":"编辑模式：计时器的添加、删除、设置和重排序","level":"1.6.1","depth":2,"path":"operation-instruction/edit.md","ref":"./operation-instruction/edit.md","articles":[]},{"title":"面板列表的编辑添加、删除、重命名和排序功能","level":"1.6.2","depth":2,"path":"operation-instruction/panel.md","ref":"./operation-instruction/panel.md","articles":[]},{"title":"导入/导出面板数据","level":"1.6.3","depth":2,"path":"operation-instruction/import-export.md","ref":"./operation-instruction/import-export.md","articles":[]},{"title":"小组件","level":"1.6.4","depth":2,"path":"operation-instruction/widget.md","ref":"./operation-instruction/widget.md","articles":[]},{"title":"悬浮窗","level":"1.6.5","depth":2,"path":"operation-instruction/floating-window.md","ref":"./operation-instruction/floating-window.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["remove-published-with-link","search-plus","mtime","meta"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"no-referrer","data":[],"name":"referrer"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"remove-published-with-link":{},"mtime":{"prefix":"","postfix":"<span style=\"float:right\"></span>"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"DuguTechStudio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":false,"all":[]}},"gitbook":"*","description":"Instructions for using the timer"},"file":{"path":"operation-instruction/edit.md","mtime":"2023-12-09T11:40:09.061Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-12-09T11:40:34.556Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-remove-published-with-link/remove-link.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
